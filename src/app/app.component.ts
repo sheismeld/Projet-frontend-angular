@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counters';
+  initialValue = [12, 6, 25];
+
+  reset(){
+    this.initialValue = [0, 0, 0];
+  }
 }
