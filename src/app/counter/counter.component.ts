@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ValueConverter } from '@angular/compiler/src/render3/view/template';
+import { CounterService } from '../counter.service';
 
 @Component({
   selector: 'app-counter',
@@ -8,17 +8,15 @@ import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 })
 export class CounterComponent implements OnInit {
 
-  title = "compteur 1"
+  @Input() position;
 
-  @Input()
-  value = 0
-  constructor() { 
-  }
+  constructor(public counterService: CounterService) { }
 
   ngOnInit() {
   }
 
-  increment(){
-    this.value++;
+  increment() {
+    this.counterService.increment(this.position);
   }
+
 }
