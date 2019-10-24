@@ -1,3 +1,141 @@
-h1{
-    color: blue;
+.counter-name-0 {
+    color : rgba(40, 91, 104, 0.7);
+}
+.counter-name-1 {
+    color : rgba(111, 168, 220, 0.7);
+}
+.counter-name-2 {
+    color : rgba(201, 17, 48, 0.7);
+}
+
+.counters-name{
+  font: normal 37px/70px "Advent Pro", Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 0px 6px 0px 6px;
+}
+
+.counter-value {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 10 auto;
+    border: none;
+    font: normal 52px/normal "Anton", Helvetica, sans-serif;
+    color: rgba(224, 135, 18, 0.719);
+    text-align: center;
+    text-transform: uppercase;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 2px 2px 0 rgb(238,238,238) , 3px 3px 0 rgb(112,112,112) ;
+}
+
+.counter-value-0 {
+    color : rgba(147,196,125,0.7);
+}
+.counter-value-1 {
+    color : rgba(111, 168, 220, 0.7);
+
+}
+.counter-value-2 {
+    color : rgba(204,65,37,0.7);
+}
+
+.counter-div{
+    text-align: center;
+    border-radius: 12px;
+    border: solid 2px;
+    padding: 0px 4px 0px 4px;
+}
+
+.counter-div-0{
+    border-color: rgba(147,196,125,0.7);
+}
+
+.counter-div-1{
+    border-color: rgba(111, 168, 220, 0.7);
+}
+
+.counter-div-2{
+    border-color: rgba(204,65,37,0.7);
+}
+
+.material-icons {
+    margin:auto;
+    text-align:center;
+    font-size:55px;
+}
+
+.buttons {
+  display:block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  margin: 0 auto;
+  font: normal 37px/70px "Advent Pro", Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0);
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+.button0 {
+  color: rgba(147,196,125,0.7);
+  border: 2px solid rgba(147,196,125,0.7);
+}
+
+.button0:hover {
+  color: rgba(255,255,255,1);
+  background: rgba(147,196,125,0.7);
+}
+.button0:active {
+  border: 2px solid rgba(147,196,125,0.7);
+  background: rgba(147,196,125,0.7);
+}
+
+.button1 {
+  color: rgba(111, 168, 220, 0.7);
+  border: 2px solid rgba(111, 168, 220, 0.7);
+}
+
+
+.button1:hover {
+  color: rgba(255,255,255,1);
+  background: rgba(111, 168, 220, 0.7);
+}
+.button1:active {
+  border: 2px solid rgba(111, 168, 220, 0.7);
+  background: rgba(111, 168, 220, 0.7);
+}
+
+.button2 {
+  color: rgba(204,65,37,0.7);
+  border: 2px solid rgba(204,65,37,0.7);
+}
+
+.button2:hover {
+  color: rgba(255,255,255,1);
+  background: rgba(204,65,37,0.7);
+}
+
+.button2:active {
+  border: 2px solid rgba(204,65,37,0.7);
+  background: rgba(204,65,37,0.7);
+}
+
+
+.buttons:active {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }

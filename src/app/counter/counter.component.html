@@ -1,2 +1,14 @@
-<h1>counter {{position}}</h1>
-<p>{{counterService.initialValue[position]}} <button (click)="increment()">incrementer</button></p>
+<link async href="http://fonts.googleapis.com/css?family=Advent%20Pro" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class = "counter-div counter-div-{{position}}">
+  <h2 class="counter-name-{{position}} counters-name">Counter {{position}}</h2>
+  <button class="buttons button{{position}}" (click)="increment()"><i class="material-icons">add</i></button>
+  <p class="counter-value-{{position}} counter-value" >{{counterService.initialValue[position]}} </p>
+</div>
+
+
+<!--
+    <h1>counter {{position}}</h1>
+    <p>{{counterService.initialValue[position]}} <button (click)="increment()">INCREMENTER</button></p> 
+-->

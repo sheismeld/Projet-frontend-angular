@@ -1,3 +1,45 @@
 h1 {
-    color: red;
+    text-align: center;
+    font: normal 57px/90px "Advent Pro", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: rgb(112, 112, 112);
+}
+
+.counters{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+.reset{
+  margin: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.reset-button {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 156px;
+  cursor: pointer;
+  padding: 18px 28px;
+  border: none;
+  font: normal normal 35px Impact, Charcoal, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: black;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
+.reset-button:hover {
+  background: rgb(229, 17, 17);
 }
