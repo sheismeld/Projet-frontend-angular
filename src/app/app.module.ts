@@ -1,19 +1,20 @@
-import { Injectable } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { CounterComponent } from './counter/counter.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    CounterComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class CounterService {
-  public initialValue = [12, 6, 78];
-
-  constructor() { }
-
-  reset() {
-    this.initialValue = [0, 0, 0];
-  }
-
-  increment(position: number): number {
-    this.initialValue[position]++;
-    return this.initialValue[position];
-  }
-}
+export class AppModule { }
