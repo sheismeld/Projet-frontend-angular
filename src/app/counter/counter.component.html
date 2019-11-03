@@ -1,12 +1,25 @@
 <link async href="http://fonts.googleapis.com/css?family=Advent%20Pro" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<div class = "counter-div counter-div-{{position}}">
+<!--<div class = "counter-div counter-div-{{position}}">
   <h2 class="counter-name-{{position}} counters-name">Counter {{position}}</h2>
   <button class="buttons button{{position}}" (click)="increment()"><i class="material-icons">add</i></button>
   <p class="counter-value-{{position}} counter-value" >{{counterService.initialValue[position]}} </p>
-</div>
+</div>-->
 
+<mat-card class="example-card" *ngIf="value">
+    <mat-card-header>
+      <mat-card-title> <h4 style="color: chocolate">#{{position}} {{value.name}}</h4> </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{value.value}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button-danger (click)="increment()">Incrémenter</button>
+    </mat-card-actions>
+</mat-card>
 
 <!--
     <h1>counter {{position}}</h1>
