@@ -1,7 +1,17 @@
 h1 {
-  color: blue;
+    color : rgb(12, 193, 209)  ;
 }
-
-p {
-  font-size: 200%;
+.mat-card{
+    margin: 3em;
+}
+.mat-button{
+    border: 2px solid yellow;
+    background: rgba(15, 108, 214, 0.356);
+}
+.mat-card-title{
+    line-height:2;
+    color : rgb(16, 109, 63);
+}
+.mat-card-content p{
+    font-weight: bold;
 }

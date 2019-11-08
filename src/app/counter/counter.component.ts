@@ -1,8 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CounterService } from '../counter.service';
-import { Observable, from } from 'rxjs';
 import { Counter } from '../counter';
-import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-counter',
@@ -10,23 +8,36 @@ import { ActivatedRoute } from '@angular/router'
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-
-  @Input() position: number;
+  title ="compteur 1"
+  @Input() position : number;
 
   value: Counter;
-
-  constructor(public counterService: CounterService, private route: ActivatedRoute) { }
+  constructor(public counterService: CounterService) { }
 
   ngOnInit() {
-    console.log("call counter")
-    this.route.paramMap.subscribe(params => {
-      this.counterService.getCounterValue(+params.get('id'))
-          .subscribe(counter => this.value =  counter)
-    });
+    if (this.position == 1){
+      this.counterService.getCounterValue(47)
+      .subscribe(counter => this.value =  counter)
+    }
+    if (this.position == 2){
+      this.counterService.getCounterValue(48)
+      .subscribe(counter => this.value =  counter)
+    }
+    if (this.position == 3){
+      this.counterService.getCounterValue(51)
+      .subscribe(counter => this.value =  counter)
+    }
   }
-
-  increment() {
-    this.counterService.increment(this.position);
+  increment(){
+    //this.counterService.increment(this.position);
+        if(this.position == 1) this.counterService.increment(47).subscribe(counter => this.value = counter);
+        if(this.position == 2) this.counterService.increment(48).subscribe(counter => this.value = counter);
+        if(this.position == 3) this.counterService.increment(51).subscribe(counter => this.value = counter);
   }
-
+  decrement(){
+    this.counterService.decrement(this.position);
+  }
+  resetOne(){
+    this.counterService.resetOne(this.position);
+  }
 }

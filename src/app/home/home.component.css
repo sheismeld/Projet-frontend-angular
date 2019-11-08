@@ -1,3 +1,5 @@
-.spaced {
-    margin-bottom: 1em;
+.mat-button {
+    border: 2px solid red; 
+    background: rgba(111, 115, 121, 0.356); 
+    margin-left: 3.5em;  
 }

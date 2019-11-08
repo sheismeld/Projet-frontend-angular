@@ -8,13 +8,12 @@ import { CounterService } from '../counter.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor( private counterService: CounterService ) { }
+  constructor(private counterService: CounterService) { }
 
   ngOnInit() {
   }
-
-  reset() {
-    this.counterService.reset()
+  reset(){
+    this.counterService.reset();
   }
 
 }

@@ -36,10 +36,6 @@ import { Router, RouterModule } from '@angular/router';
     MatListModule,
     MatCardModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      {path: '', component: HomeComponent},
-      {path: 'counters/:id', component:CounterComponent}
-    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
