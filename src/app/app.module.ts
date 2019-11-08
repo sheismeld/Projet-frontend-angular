@@ -15,6 +15,7 @@ import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule }    from '@angular/common/http';
+import { Router, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,10 @@ import { HttpClientModule }    from '@angular/common/http';
     MatListModule,
     MatCardModule,
     HttpClientModule,
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'counters/:id', component:CounterComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
