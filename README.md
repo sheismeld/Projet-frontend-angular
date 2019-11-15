@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/28883085-02fb-47ba-bab2-6f7378d07d1b/deploy-status)](https://app.netlify.com/sites/bayidore-frontend/deploys)
 # Counters
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
