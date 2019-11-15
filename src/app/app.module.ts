@@ -18,6 +18,13 @@ import { HttpClientModule }    from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
 import { CounterDataComponent } from './counter-data/counter-data.component';
 import { ProfileComponent } from './profile/profile.component';
+//import { NgxActionCableModule, NgxActionCableConfiguration } from 'ngx-actioncable';
+
+/* export function getNgxActionCableConfig(): NgxActionCableConfiguration {
+  let config = new NgxActionCableConfiguration('ws-id', 'wss://.../cable');
+  config.addUrl('another-ws-id', 'wss://.../cable'); // optional
+  return config;
+} */
 
 @NgModule({
   declarations: [
@@ -40,6 +47,7 @@ import { ProfileComponent } from './profile/profile.component';
     MatListModule,
     MatCardModule,
     HttpClientModule,
+//    NgxActionCableModule.forConfig(getNgxActionCableConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

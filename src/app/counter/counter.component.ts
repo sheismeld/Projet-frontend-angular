@@ -14,7 +14,7 @@ export class CounterComponent implements OnInit {
 
   value: Counter;
   constructor(public counterService: CounterService) { }*/
-  counter: Counter = new Counter();
+  counter: Counter;
   constructor(public counterService: CounterService, private route : ActivatedRoute) { }
 
 

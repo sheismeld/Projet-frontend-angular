@@ -12,4 +12,4 @@
         <button mat-button (click)="reset()" disabled><b>Réinitialisation</b></button>  
     </mat-card-actions>
 </mat-card>
-<app-counter-data *ngFor="let counter of counters" [position]="counter.id"></app-counter-data>
+<app-counter-data *ngFor="let counter of counters" [id]="counter.id"></app-counter-data>
