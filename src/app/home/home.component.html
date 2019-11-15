@@ -1,4 +1,15 @@
-<button mat-button (click)= "reset()">Réinitialisation </button>
+<!--<button mat-button (click)= "reset()">Réinitialisation </button>
 <app-counter [position] = "1"></app-counter>
 <app-counter [position] = "2"></app-counter>
-<app-counter [position] = "3"></app-counter>
+<app-counter [position] = "3"></app-counter>-->
+
+
+<mat-card class="counter-card">
+    <mat-card-header>
+        <h1>Compteurs</h1>
+    </mat-card-header>
+    <mat-card-actions>
+        <button mat-button (click)="reset()" disabled><b>Réinitialisation</b></button>  
+    </mat-card-actions>
+</mat-card>
+<app-counter-data *ngFor="let counter of counters" [position]="counter.id"></app-counter-data>

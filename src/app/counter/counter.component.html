@@ -5,11 +5,14 @@
   <mat-card-content>
     <p>
       Valeur ==>: {{value.value}}
+      <p>Créer le ==>: {{ counter.created_at }}</p>
+      <p>Modifier le ==>: {{ counter.updated_at }}</p>
     </p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button (click) = "increment()" >Incrémenter</button>
     <button mat-button (click) = "decrement()" >Décrementer</button>
-    <!--<button mat-button (click) = "resetOne()" >Réinitialiser</button>-->
+    <button mat-button (click) = "resetOne()" >Réinitialiser</button>
+    <a mat-button target="_blank" [href]="counter.url">Lien vers compteur</a>
   </mat-card-actions>
 </mat-card>

@@ -16,13 +16,17 @@ import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule }    from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
+import { CounterDataComponent } from './counter-data/counter-data.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    CounterDataComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
